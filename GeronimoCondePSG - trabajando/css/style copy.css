@@ -1,0 +1,417 @@
+
+#productos div{
+    border: solid 1px;
+    padding: 5px;
+    background-color:white;
+    width:auto;
+    height: auto;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+
+/* GRIDS */
+
+header {
+    grid-area: header;
+    background-color:#ffdb4d; 
+    
+}
+
+footer {
+    grid-area: footer;
+    background-color:#ffdb4d; 
+    height:100px;
+}
+
+#productos {
+    grid-area: productos;
+  
+   
+}
+
+
+#listaprod{
+    grid-area: listaprod;
+    height: 250px;
+}
+
+#listaprod{
+    animation-duration: 5s;
+    animation-name: aparece;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes aparece{
+    0%{
+        opacity: 0%;  
+    }
+    25%{
+        opacity: 25%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    75%{opacity: 75%;
+    }
+    100%{opacity: 100%;
+    }
+}
+
+
+section#menunav-flex{
+    grid-area: menunav;
+   
+}
+
+
+
+#grilla {
+    display: grid;
+    grid-template-columns: 20% auto 15%;
+    grid-template-rows: 100px 50px 1fr  75px;
+    grid-template-areas: "header header header""menunav menunav menunav" "listaprod productos publicidad"  "footer footer footer";
+    column-gap: 20px;
+    row-gap: 20px;
+    background-color:whitesmoke;
+    justify-items: stretch;
+}
+
+
+#productos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto ;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-items:space-around ;
+ 
+}
+
+
+.header-flex{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.menu-flex{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.lista-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.footer-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*grilla index*/
+
+section#main-flex{
+   
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    justify-items:space-around;
+    justify-content: space-around;
+   
+}
+
+.borde {
+    border: 1px solid black;
+}
+#grilla2{
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: 100px 50px auto auto 75px;
+grid-template-areas: "header header header""menunav menunav menunav""main main main""cuadrotexto cuadrotexto""footer footer footer";
+column-gap: 20px;
+row-gap: 20px;
+background-color:whitesmoke;
+}
+#main-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: space-around;
+}
+.cuadrosMarcas-flex{
+    margin-top:10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-items: space-around;
+    justify-content: space-around;
+}
+
+.cuadrosMarcas-flex{
+    animation-name: efecto;
+    animation-iteration-count:infinite;
+    animation-timing-function: 2s;
+    animation-duration: 6s;
+    animation-delay: 3;
+}
+
+@keyframes efecto{
+    0%{
+        width: 700px;
+        height:150px;
+        background-color: #ffdb4d;
+    }
+    25%{
+        width: 400px;
+    }
+    50%{
+        width:200px
+    }
+    75%{
+        width:100px;
+    }
+    100%{
+        width:0px;
+    }
+}
+
+#cuadrotextos-flex{
+    grid-area: cuadrotexto;
+    margin-right: 10px;
+    margin-left: 10px;
+    line-height: 30px;
+    font-size: medium;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    background: linear-gradient( whitesmoke , white );
+    width:auto;
+    height:auto;
+    transition: height 2s, width 1s;
+}
+#cuadrotextos-flex:hover{
+    height: 1500px ;
+    width:1300px;
+}
+
+@media screen and (min-width: 320px) {
+    #grilla {
+        display: grid;
+        grid-template-columns:auto;
+        grid-template-rows: 100px  auto  75px;
+        grid-template-areas: "header header header""productos productos productos""footer footer footer";
+        column-gap: 20px;
+        row-gap: 20px;
+        background-color:whitesmoke;
+       
+    }
+    #menunav-flex{
+        display:none
+    }
+    #listaprod{
+        display:none;
+    }
+    
+    
+    
+    #productos{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto ;
+        column-gap: 10px;
+        row-gap: 10px;
+        display:flex;
+        flex-direction: column;
+
+    }
+    #grilla2{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px 50px auto auto 75px;
+        grid-template-areas: "header header header""menunav menunav menunav" "main main main""cuadrotexto cuadrotexto cuadrotexto""footer footer footer";
+        column-gap: 20px;
+        row-gap: 20px;
+        background-color:whitesmoke;
+        
+        }
+    #cuadrotextos-flex{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #grilla {
+        display: grid;
+        grid-template-columns: 20% auto 15%;
+        grid-template-rows: 100px 50px 1fr  75px;
+        grid-template-areas: "header header header""menunav menunav menunav" "listaprod productos publicidad"  "footer footer footer";
+        column-gap: 20px;
+        row-gap: 20px;
+        background-color:whitesmoke;
+        justify-items: stretch;
+    }
+    #menunav-flex{
+        display:block;}
+    
+    #listaprod{
+        display:block;
+    }
+    
+    
+    #productos{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto ;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    #grilla2{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px 50px auto auto 75px;
+        grid-template-areas: "header header header""menunav menunav menunav" "main main main""cuadrotexto cuadrotexto cuadrotexto""footer footer footer";
+        column-gap: 20px;
+        row-gap: 20px;
+        background-color:whitesmoke;
+        
+        }
+        #cuadrotextos-flex{
+            display: block;
+        }
+    
+}
+
+#grillacontactos{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:100px 50px auto auto 75px; 
+    grid-template-areas:"header header header""menunav menunav menunav""formulario formulario formulario""mapa mapa mapa""footer footer footer";
+    background-color:whitesmoke;
+}
+
+#formulario{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto  ;
+    grid-template-areas:"nombre nombre nombre ""apellido apellido apellido""email email email""observaciones observaciones observaciones""contactar contactar contactar""calificacion calificacion calificacion" ;
+    grid-area: formulario;
+    display:flex;
+    flex-direction: column;
+    column-gap: 10px;
+    padding:10px;
+}
+
+#mapa{
+    grid-area: mapa;
+}
+
+.nombre{
+    grid-area: nombre;
+}
+
+.apellido{
+    grid-area: apellido;
+}
+
+.email{
+    grid-area: email;
+}
+
+.observaciones{
+    grid-area: observaciones;
+}
+
+.contactar{
+    grid-area: contactar;
+}
+
+.calificacion{
+    grid-area: calificacion;
+}
+
+
+
+/*Grid recetas*/
+@media screen and (min-width: 320px){
+    #grillaR{
+        display: grid;
+        display:flex;
+        grid-template-columns: auto;
+        grid-template-rows: 100px 50px auto 75px;
+        grid-template-areas: "header header header""menunav menunav menunav""imagen1 imagen1 ejemplo""footer footer footer";
+    }
+    .listaRecetas{
+        display:none;
+    }
+    .ingredientes{
+        display: none;
+    }
+    #pasos{
+        display:none;
+    }
+  
+
+}
+
+@media screen and (min-width: 1200px) {
+#grillaR{
+    display: grid;
+    display:flex;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 50px auto auto auto 75px;
+    grid-template-areas: "header header header""menunav menunav menunav""presentacion presentacion imagen""ingredientes paso pasos""ejemplo ejemplo ejemplo""footer footer footer";
+   
+}
+.ingredientes{
+    display:block;
+}
+#pasos{
+    display:block;
+}
+.imagen1{
+    display:block;
+}
+
+
+#presentacion{
+    display:flex;
+    grid-area: presentacion;
+    justify-content: center;
+}
+
+#listaRecetas{
+   display:flex;
+   grid-area: listaRecetas;
+}
+
+#ejemplo{
+    display:flex;
+    grid-area: ejemplo;
+    justify-content: center;
+}
+ 
+#imagen1{
+    display:flex;
+    grid-area: imagen1;
+    justify-content: space-around;
+}
+
+.ingredientes{
+    grid-area: ingredientes;
+}
+
+#pasos{
+    grid-area: pasos;
+}
+}
+

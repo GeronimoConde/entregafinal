@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="pages/archivo.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos Sin Gluten</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="shortcut icon" href="../media/logopsg.jpg">
+</head>
+<body>
+    <div id="grillacontactos">
+    <header class="border">
+        <div class="header-flex">
+        <img src="../media/logopsg.jpg"> 
+        <h1><strong>Pedidos Sin Gluten</strong></h1>
+        <form action=""method="GET"  enctype="multipart/form-data"></form>
+        <nav class="navbar bg-#ffdb4d">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="buscar" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </nav>
+        </div>
+    </header>
+
+    <section id="menunav-flex" class="border">
+        <ul class="lista-flex">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="Recetas.html">Recetas</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </section>
+    
+    <section id="formulario" class="border">
+     <div class="nombre">
+        <form action=""method="GET"  enctype="multipart/form-data"></form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" placeholder="Nombre">
+     </div>
+     <div class="apellido">
+        <label for="apellido">apellido:</label>
+        <input type="text" name="apellido" placeholder="Apellido">
+     </div>
+        
+     <div class="email">
+        <label for="email">Email:</label>
+        <input type="text" name="email" placeholder="Email">
+    </div>
+       
+    <div class="obeservaciones">
+        <label for="observaciones">Observaciones:</label>
+        <input type="text" name="observaciones" placeholder="Observaciones">
+    </div>  
+
+    <div class="contactar">
+        <form actvion="" method="GET" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Desea ser contactado por telefono o por email?:</legend>
+                <label for="Telefono">Telefono:</label>
+                <input type="radio" id="Telefono" name="Telefono" value="Telefono">
+                <br>
+                <label for="Email">Email:</label>
+                <label for="Telefono"></label>
+                <input type="radio" id="Email" name="Email" value="Email">
+                <label for="Email"></label>
+    
+            </fieldset>
+        </div>  
+        
+        <div class="calificacion">
+            <form>
+                <label for="Como califica nuestro servicio?">Como califica nuestro servicio?</label>
+                <select name="Como califica nuestro servicio?">
+                <option value="Bueno">Bueno</option>
+                <option value="Muy Bueno">Muy Bueno</option>
+                <option value="Malo">Malo</option>
+                <option value="Muy Malo">Muy malo</option>
+            </select>
+            </form>
+                <button type="button" class="btn btn-dark">Enviar</button>
+            </form>
+        </div>  
+        </section>
+        <section id="mapa" class="border">
+            <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d818.0051438023754!2d-58.020617159983594!3d-34.905933165492044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2dd9c96136fe3%3A0xbb1316bcb920fd7!2sC.%20510%203715%2C%20B1897%20Gonnet%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1656614613426!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <footer class="border">
+            <div class="footer-flex">
+            <img src="../media/logopsg.jpg">
+        <p>Tel: 221-5627046</p>
+        <p>Tel: 221-6170228</p>
+        <p>Email: Pedidossingluten@hotmail.com</p>
+        </div>
+         </footer>
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

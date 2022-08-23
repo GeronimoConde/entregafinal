@@ -1,0 +1,3 @@
+agregue las siguientes keywords:Gluten, Sin Gluten, Celiaquia, Saludable, Glutenfree,dietetica,Tacc, Sin tacc
+agregue botones para las redes sociales en el footer
+intente agregar un subrayado a los textos ubicados en cuadrotextos-flex (no me salio)
